@@ -86,6 +86,40 @@
 .ex-10-icon {
   font-size: 60px;
 }
+.ex-10-icon {
+  animation-name: gira;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes gira {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+.ex-11-icon:hover {
+  animation-name: gira-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes gira-2 {
+  0% {
+    transform: rotate(0%);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .ex-11-icon {
   font-size: 60px;
 }
@@ -120,4 +154,21 @@
   background: #f5f5f5;
   width: 60px;
   height: 20px;
+}
+
+.ex-12-bottom-white .ex-12-button {
+  animation-name: square;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes square {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  100% {
+    right: 20%;
+  }
 }
