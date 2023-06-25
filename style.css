@@ -65,10 +65,23 @@
   transition: 2000ms;
   filter: grayscale(100%);
 }
+.ex-8-img:hover {
+  transition: 2000ms;
+  filter: grayscale(100%);
+  filter: blur(50%);
+  border-radius: 20%;
+}
 
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
+}
+.ex-9-img:active {
+  transition: 2000ms;
+  filter: grayscale(100%);
+  filter: opacity(80%);
+  border-radius: 10%;
+  transform: scale(1.5);
 }
 .ex-10-icon {
   font-size: 60px;
